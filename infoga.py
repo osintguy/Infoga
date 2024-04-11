@@ -104,8 +104,11 @@ class infoga(object):
 			info('File saved in: '+self.report.name)
 			self.report.close()
 		# end
-if __name__ == "__main__":
+def main():
 	try:
 		infoga().main()
 	except KeyboardInterrupt as e:
 		sys.exit(warn('Exiting...'))
+		
+if __name__ == "__main__":
+	main()
