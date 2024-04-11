@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "infoga"
+version = "0.1.5"
+authors = [
+  { name="'Momo (m4ll0k) Outaadi", email="m4ll0k@protonmail.com" },
+]
+description = "Email OSINT"
+requires-python = ">=3.8"
+dependencies = ['colorama','requests','urllib3'],
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GPLv3",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/m4ll0k/"
+Issues = "https://github.com/m4ll0k/issues"
+
+[project.scripts]
+infoga = "infoga:main"
+# credit to https://github.com/soxoj/marple
